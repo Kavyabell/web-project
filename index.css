@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #22C55E;
+  --color-dark: #0F172A;
+  --color-light: #F8FAFC;
+  --font-sans: 'Inter', sans-serif;
+}
+
+@layer base {
+  html {
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: var(--color-light);
+    color: var(--color-dark);
+    font-family: var(--font-sans);
+    overflow-x: hidden;
+  }
+}
+
+@utility smooth-transition {
+  transition-property: all;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
